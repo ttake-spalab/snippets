@@ -182,6 +182,22 @@
         ],
         "description": "multi-line with satement"
     },
+    "with open": {
+        "prefix": "withopen",
+        "body": [
+            "with open(${1:file}) as ${2:alias}:",
+            "\t${0:pass}"
+        ],
+        "description": "with open() as"
+    },
+    "with path": {
+        "prefix": "withpath",
+        "body": [
+            "with ${1:Path()}.open(\"${2:r}\") as ${3:fp}:",
+            "\t${0:pass}"
+        ],
+        "description": "with Path().open() as"
+    },
     "match": {
         "prefix": "match",
         "body": [
