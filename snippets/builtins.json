@@ -6,7 +6,7 @@
     },
     "from collection.abc import ...": {
         "prefix": "fimabc",
-        "body": "from collection.abc import $0",
+        "body": "from collections.abc import $0",
         "description": "import abc types from collections.abc"
     },
     "from dataclasses import dataclass": {
@@ -52,5 +52,13 @@
         "prefix": "printv",
         "body": "print(f\"{${1:value} = }\")$0",
         "description": "print(f\"{value = }\")"
+    },
+    "TypedDict template": {
+        "prefix": "classtyped",
+        "body": [
+            "class ${1:ClassName}(TypedDict):",
+            "\t${0:name: types}"
+        ],
+        "description": "TypedDict"
     }
 }

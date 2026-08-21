@@ -286,7 +286,7 @@
         "prefix": "defc",
         "body": [
             "@classmethod",
-            "def ${1:fname}(cls, ${2:args: types}) -> ${3:types}:",
+            "def ${1:fname}(cls, ${2:args: types}) -> ${3:Self}:",
             "\t${0:pass}"
         ],
         "description": "class method defintion"
